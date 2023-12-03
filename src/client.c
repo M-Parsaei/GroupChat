@@ -5,8 +5,12 @@
 
 #define PORT 8000
 #define ADDR "192.168.68.6"
+#define BUF_SIZE 1024
 
 int main(){
+
+    char buffer[1024];
+
     // making the socket file descriptor
     int socketFD = socket(AF_INET,SOCK_STREAM,0);
 
@@ -19,7 +23,9 @@ int main(){
     int result = connect(socketFD,(struct sockaddr *)&address,sizeof address);
 
     if(result == 0){
-        printf("Connected")
+        printf("Connected");
+        buffer="Hello There";
+        send(socketFD,buffer,strlen(buffer),0);
     }
     else{
         printf("connectioned failed");

@@ -1,0 +1,3 @@
+/home/cmpt201/a12-M-Parsaei/build/CMakeFiles/server.dir
+/home/cmpt201/a12-M-Parsaei/build/CMakeFiles/edit_cache.dir
+/home/cmpt201/a12-M-Parsaei/build/CMakeFiles/rebuild_cache.dir
